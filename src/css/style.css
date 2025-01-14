@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Antic+Didone&family=Quicksand:wght@300..700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100dvh;
+    background-color: black;
+    color: azure;
+    font-family: "Antic Didone", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100dvh;
+    background-color: rgb(83, 83, 83);
+    width: 100%;
+    min-height: 100dvh;
+}
+
+.header-home {
+    background-color: #242424;
+    color: #fff;
+    padding: .5rem;
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 2rem;
+}
+
+.title-home {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.container-principal__inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.inicio__h2 {
+    font-size: 1.1rem;
+
+}
+
+.container-motivo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    align-items: center;
+    background-color: rgb(70, 70, 70);
+    width: 100%;
+}
+
+.motivo-h2 {
+    font-size: 1.5rem;
+    padding: 6rem;
+}
+
+.img-ilustrativo__sebrae {
+    width: 30rem;
+    margin: 3rem 0 7rem 0;
+}
+
+.botao-motivosebrae {
+    color: #fff;
+    background-color: #242424;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.botao-motivosebrae:hover{
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    scale: 1.03;
+    transition-duration: .5s;
+}
