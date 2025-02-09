@@ -1,25 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>webshop</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+<!-- https://webshoop.netlify.app/src/html/ -->
 <body>
-    <div class="container-principal">
+    <section class="container-inicio" id="rolagem-home">
         <header class="header-home">
-            <h1 class="title-home">webshop</h1>
+            <a class="title-home" href="index.html">webshop</a>
+            <nav class="menu-home">
+                <ul class="ul-link">
+                    <li class="li-link"><a href="#rolagem-home" class="a-link">Home</a></li>
+                    <li class="li-link"><a href="#rolagem-loja" class="a-link">Loja</a></li>
+                    <li class="li-link"><a href="#rolagem-contato" class="a-link">Contato</a></li>
+                </ul>
+            </nav>
         </header>
-        <div class="container-principal__inicio">
+        <div class="container-inicio__inicio">
             <h2 class="inicio__h2">Um site que fala por você</h2>
         </div>
-    </div>
-    <div class="container-motivo">
+    </section>
+    <section class="container-motivo">
         <h2 class="motivo-h2">Na era da internet, estar conectado é de extrema impotância!</h2>
-        <img class="img-ilustrativo__sebrae
-        " src="../img/img-ilustrativo/sebrae.png" alt="fonte que mostra 5 motivos para ter um site">
-        <a class="botao-motivosebrae" href="https://sebrae.com.br/sites/PortalSebrae/artigos/5-motivos-para-sua-empresa-ter-um-site%2Ce702ec7210a41810VgnVCM100000d701210aRCRD?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Acessar o site</a>
-    </div>
+        <a href="https://sebrae.com.br/sites/PortalSebrae/artigos/5-motivos-para-sua-empresa-ter-um-site%2Ce702ec7210a41810VgnVCM100000d701210aRCRD?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+            <img class="img-ilustrativo__sebrae
+            " src="../img/img-ilustrativo/sebrae.png" alt="fonte que mostra 5 motivos para ter um site">
+        </a>
+        <p class="paragrafo-motivo">"Clique na imagem para acessar o site"</p>
+    </section>
+    <section class="container-loja" id="rolagem-loja">
+        <h2 class="loja-h2">Vamos olhar os sites disponíveis</h2>
+        <div class="container-loja__produtos">
+            <article class="produtos">
+                <h3 class="title-produtos">Modelos pré-definidos</h3>
+                <ul class="produtos-list">
+                    <li class="list">Menor investimento</li>
+                    <li class="list">Entrega rápida</li>
+                    <li class="list">Hospedagem grátis</li>
+                </ul>
+                <a class="btn-produtos all-btn" href="modelos.html" target="_blank" rel="noopener noreferrer">Acessar modelos</a>
+            </article>
+            <article class="produtos">
+                <h3 class="title-produtos">Personalizado</h3>
+                <ul class="produtos-list">
+                    <div class="caixa-list">
+                        <li class="list">Personalização do zero</li>
+                        <li class="list">Mais liberdade para sua imaginação</li>
+                        <li class="list">Hospedagem grátis</li>
+                        <li class="list">Domínio personalizado</li>
+                    </div>
+                </ul>
+                <a class="btn-produtos all-btn" href="personalizado.html" target="_blank" rel="noopener noreferrer">Criar do seu jeito</a>
+            </article>
+        </div>
+    </section>
+    <section class="container-contato" id="rolagem-contato">
+        <form action="https://formsubmit.co/contact.caiodev@gmail.com" method="post">
+            <fieldset>
+                <legend>Entre em contato</legend>
+                <label for="email">Seu melhor email: </label>
+                <input type="email" name="email" id="email" required>
+                <label for="telefone">Whatzapp: </label>
+                <input type="tel" name="telefone" id="telefone">
+                <label for="message">Mensagem</label>
+                <input type="text" name="texto" id="message" required>
+                <select name="tipo de site">
+                    <option value="">Tipo de site</option>
+                    <optgroup label="Modelos">
+                        <option value="sobre-mim">Sobre mim</option>
+                        <option value="webshop">webshoop</option>
+                        <option value="teste">teste</option>
+                    </optgroup>
+                    <optgroup label="Personalizado">
+                        <option value="personalizado">Personalizado</option>
+                    </optgroup>
+                </select>
+                <input type="submit" value="Enviar" class="btn-submit all-btn">
+            </fieldset>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://webshoop.netlify.app/src/html/obrigado.html">
+        </form>
+    </section>
+    <footer class="footer-home">
+        <p>Todos os direitos reservados &copy; webshoop 2025</p>
+    </footer>
+
 </body>
 </html>
