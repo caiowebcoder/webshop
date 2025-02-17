@@ -7,6 +7,7 @@
     <title>Obrigado</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Abel&family=Antic+Didone&family=Quicksand:wght@300..700&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -23,36 +24,60 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
             align-items: center;
-            gap: 8rem;
+            gap: 3rem;
         }
 
         h1 {
             font-size: 3em;
+            margin: 4rem;
         }
 
-        a {
+        .p-principal {
+            margin: 3rem 0 1rem;
+        }
+
+        .btn {
             color: white;
             background-color: rgb(19, 19, 19);
             text-decoration: none;
             padding: .7rem 1rem;
             border-radius: .5rem;
+            margin: 2rem;
         }
+
+        img {
+            width: 5rem;
+
+        }
+
+        img:hover {
+            scale: 1.1;
+            transition: 0.3s ease;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 0 1rem;
                 align-items: center;
+            }
+
+            h1 {
+                font-size: 1.5rem;
             }
         }
     </style>
 </head>
 
 <body>
+    
     <h1>Formulário enviado com sucesso</h1>
-    <p>Obaa! O seu formulário foi enviado! <br> Aguarde que entrarei em contado em breve ultilizando os meios
+    <p class="p-principal">Obaa! O seu formulário foi enviado! <br> Aguarde que entrarei em contado em breve ultilizando os meios
         mencionados.</p>
-    <a href="index.html">Voltar</a>
+    <p>Gostaria de entrar em contato pelo whatsapp? <br> (48) 9616-0385</p>
+    <a href="https://wa.me/qr/DPX7ZROWP66XD1" target="_blank" rel="noopener noreferrer"><img src="../img/img-icons/whats.png"
+            alt="icone do whatsaap"></a>
+    <a class="btn" href="index.html">Voltar</a>
 </body>
 
 </html>

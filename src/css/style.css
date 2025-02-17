@@ -277,6 +277,37 @@ select {
     align-items: center;
 }
 
+fieldset {
+    padding: 1rem;
+}
+
+textarea {
+    resize: none;
+    padding: .5rem;
+    border-radius: .5rem;
+
+}
+
+input, textarea {
+    outline: none;
+    border-bottom: 2px solid rgba(31, 31, 31, 0.589);
+}
+
+
+input:invalid:focus, textarea:invalid:focus {
+    border-bottom: 2px solid #ff0000;
+    
+}
+
+input:valid:focus, textarea:valid:focus {
+    border-bottom: 2px solid #00ff00;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 2px solid #000000;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 768px) {
     .header-home {
         justify-content: space-evenly;
@@ -310,5 +341,16 @@ select {
         align-items: center;
     }
 
+    fieldset {
+        padding: 1em;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    textarea {
+        width: 90%;
+    }
     
 }

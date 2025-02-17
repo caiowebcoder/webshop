@@ -61,12 +61,13 @@
         <form action="https://formsubmit.co/contact.caiodev@gmail.com" method="post">
             <fieldset>
                 <legend>Entre em contato</legend>
+                <label for="name">Seu nome </label>
+                <input type="text" name="name" id="name" placeholder="Como gostaria de ser chamado?" minlength="12" maxlength="22">
                 <label for="email">Seu melhor email: </label>
-                <input type="email" name="email" id="email" required>
-                <label for="telefone">Whatzapp: </label>
-                <input type="tel" name="telefone" id="telefone">
+                <input type="email" name="email" id="email" placeholder="Digite seu email aqui" required minlength="5"
+                maxlength="50">
                 <label for="message">Mensagem</label>
-                <input type="text" name="texto" id="message" required>
+                <textarea name="texto" id="message" minlength="8" rows="6" cols="35"  maxlength="255" placeholder="Algo para completar" required></textarea>
                 <select name="tipo de site">
                     <option value="">Tipo de site</option>
                     <optgroup label="Modelos">
