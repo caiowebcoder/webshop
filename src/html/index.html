@@ -62,13 +62,13 @@
             <fieldset>
                 <legend>Entre em contato</legend>
                 <label for="name">Seu nome </label>
-                <input type="text" name="name" id="name" placeholder="Como gostaria de ser chamado?" minlength="12" maxlength="22">
+                <input class="form-name form-all" type="text" name="name" id="name" placeholder="Como gostaria de ser chamado?" minlength="3" maxlength="32" required>
                 <label for="email">Seu melhor email: </label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email aqui" required minlength="5"
+                <input class="form-email form-all" type="email" name="email" id="email" placeholder="Digite seu email aqui" required minlength="5"
                 maxlength="50">
                 <label for="message">Mensagem</label>
-                <textarea name="texto" id="message" minlength="8" rows="6" cols="35"  maxlength="255" placeholder="Algo para completar" required></textarea>
-                <select name="tipo de site">
+                <textarea class="form-message form-all" name="texto" id="message" minlength="8" rows="6" cols="35" maxlength="255" placeholder="Algo para completar" required></textarea>
+                <select name="tipo de site" class="type-web">
                     <option value="">Tipo de site</option>
                     <optgroup label="Modelos">
                         <option value="sobre-mim">Sobre mim</option>

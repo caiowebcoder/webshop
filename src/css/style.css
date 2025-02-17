@@ -23,6 +23,7 @@ body {
     font-weight: 100;
     font-style: normal;
     text-align: center;  
+    box-sizing: border-box;
 }
 
 #rolagem-contato {
@@ -202,7 +203,7 @@ body {
     width: 100%;
 }
 
-input, label {
+.form-name, .form-email, .form-message, label {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -234,7 +235,7 @@ label {
     color: #000000;
 }
 
-input {
+.form-name, .form-email, .form-messaget {
     padding: .5rem;
     border-radius: 5px;
     margin-bottom: 1.5rem;
@@ -279,33 +280,50 @@ select {
 
 fieldset {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-textarea {
+.form-message {
     resize: none;
     padding: .5rem;
     border-radius: .5rem;
 
 }
 
-input, textarea {
+.form-name, .form-email, .form-message {
     outline: none;
-    border-bottom: 2px solid rgba(31, 31, 31, 0.589);
+    border: 2px solid transparent;
 }
 
 
-input:invalid:focus, textarea:invalid:focus {
+.form-all:invalid:focus, .form-all:invalid:focus {
     border-bottom: 2px solid #ff0000;
     
 }
 
-input:valid:focus, textarea:valid:focus {
+.form-all:valid:focus, .form-all:valid:focus {
     border-bottom: 2px solid #00ff00;
 }
 
-input:focus, textarea:focus {
+.form-all:focus, .form-all:focus {
     border-bottom: 2px solid #000000;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.type-web {
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    border-radius:.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    width: min-content;
+}
+
+.btn-submit {
+    width: 100%;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -345,12 +363,12 @@ input:focus, textarea:focus {
         padding: 1em;
     }
 
-    input, textarea {
+    .form-all, .form-all {
         width: 100%;
     }
 
-    textarea {
-        width: 90%;
+    .form-all {
+        width: 100%;
     }
     
 }
